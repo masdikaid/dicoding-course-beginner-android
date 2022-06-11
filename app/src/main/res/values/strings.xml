@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Contact List Dicoding</string>
+    <string name="launcher_icon">launcher icon</string>
+    <string name="avatar_description">Avatar Contact</string>
+    <string name="call_action">Call</string>
+    <string name="share_action">Share</string>
+    <string name="about">my photo</string>
+    <string name="my_name">Dika Adi Setiawan</string>
+    <string name="my_email">masdikaid@gmail.com</string>
+    <string name="about_title">About</string>
+</resources>
