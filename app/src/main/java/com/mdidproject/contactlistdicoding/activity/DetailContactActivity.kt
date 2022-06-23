@@ -2,9 +2,9 @@ package com.mdidproject.contactlistdicoding.activity
 
 import android.content.Intent
 import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.mdidproject.contactlistdicoding.data.Contact
@@ -24,6 +24,7 @@ class DetailContactActivity : AppCompatActivity() {
                 Glide.with(this@DetailContactActivity)
                     .load(dt.avatar)
                     .apply(RequestOptions().override(70, 70))
+                    .circleCrop()
                     .into(ivAvatar)
 
                 tvName.text = dt.name

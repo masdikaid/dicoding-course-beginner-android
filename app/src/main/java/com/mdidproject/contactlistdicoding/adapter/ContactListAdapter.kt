@@ -1,8 +1,8 @@
 package com.mdidproject.contactlistdicoding.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.mdidproject.contactlistdicoding.`interface`.ItemAdapterCallback
@@ -26,8 +26,8 @@ class ContactListAdapter(private val contacData: ArrayList<Contact>): RecyclerVi
             Glide.with(lv.itemView.context)
                 .load(image)
                 .apply(RequestOptions().override(70, 70))
+                .circleCrop()
                 .into(avatar)
-
             contactName.text = contactname
             phoneNumber.text = pnumber
             callButton.setOnClickListener { callCallback.onItemClicked(contacData[lv.adapterPosition]) }

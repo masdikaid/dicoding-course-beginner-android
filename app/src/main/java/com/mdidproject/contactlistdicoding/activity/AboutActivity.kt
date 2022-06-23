@@ -1,7 +1,7 @@
 package com.mdidproject.contactlistdicoding.activity
 
 import android.os.Binder
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -13,7 +13,7 @@ class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAboutBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_about)
+        setContentView(binding.root)
         Glide.with(this@AboutActivity)
             .load(R.drawable.about)
             .apply(RequestOptions().override(150, 150))
